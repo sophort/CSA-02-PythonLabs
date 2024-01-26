@@ -10,7 +10,7 @@
 # Notes a hyphen will separate the two letters in the string.
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
-start, end = alphabet.split('-')
+
 user_range = input("Enter a range of letters (e.g., a-z): ")
 
 print(result_string)
