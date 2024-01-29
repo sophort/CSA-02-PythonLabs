@@ -8,9 +8,13 @@
 # "Q-Z" ➞ "QRSTUVWXYZ"
 # "J-J" ➞ "J"
 # Notes a hyphen will separate the two letters in the string.
+#ask user to input the range of alphabet
+alphabet= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+inputed_letter= input("Enter the range of letter(ex. A-Z or a-z):")
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+start, end = inputed_letter.split("-")
+start_index= alphabet.index(start)
+end_index= alphabet.index(end)+1
 
-user_range = input("Enter a range of letters (e.g., a-z): ")
-
-print(result_string)
+#display the result
+print(alphabet[start_index:end_index])
